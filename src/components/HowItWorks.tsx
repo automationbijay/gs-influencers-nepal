@@ -9,55 +9,55 @@ const influencerSteps = [
   {
     number: 1,
     title: "Sign Up",
-    description: "Click on 'Join as Influencer' and fill out your niche and audience details."
+    description: "Click on 'Join as Influencer' and fill out your niche and audience details via our form."
   },
   {
     number: 2,
-    title: "Link Accounts",
-    description: "Authenticate your social media profiles to verify your reach and engagement."
+    title: "Get Verified",
+    description: "Our automated system verifies your profile and adds you to the centralized directory."
   },
   {
     number: 3,
-    title: "Get Matched",
-    description: "Receive deal offers from businesses that align perfectly with your content style."
+    title: "Get Discovered",
+    description: "Local businesses browse the directory and find profiles that align with their goals."
   },
   {
     number: 4,
     title: "Collaborate",
-    description: "Chat directly with brands to discuss campaign creative and timelines."
+    description: "Brands contact you directly via your preferred method (WhatsApp, Email, etc.) to negotiate terms."
   },
   {
     number: 5,
     title: "Earn & Grow",
-    description: "Execute campaigns, get paid, and build your professional portfolio."
+    description: "Execute campaigns, get paid directly, and build your professional portfolio."
   }
 ];
 
 const businessSteps = [
   {
     number: 1,
-    title: "Register",
-    description: "Create your business profile and define your marketing objectives."
+    title: "Explore",
+    description: "Browse our verified directory of local creators starting at just Rs. 500."
   },
   {
     number: 2,
-    title: "Post Campaign",
-    description: "Describe your service or product and set your desired budget range."
+    title: "Find the Perfect Match",
+    description: "Filter influencers by platform, niche, and audience size to find your ideal partner."
   },
   {
     number: 3,
-    title: "Discovery",
-    description: "Our AI suggests the best-fit creators based on their actual social capital."
+    title: "Reach Out Directly",
+    description: "Contact the influencer using their provided communication channels without any middlemen."
   },
   {
     number: 4,
-    title: "Management",
-    description: "Coordinate with influencers through our built-in communication tools."
+    title: "Negotiate Terms",
+    description: "Discuss campaign details, deliverables, and payment directly with the creator."
   },
   {
     number: 5,
-    title: "Analyze",
-    description: "Track campaign performance and see real ROI on your marketing spend."
+    title: "Launch Campaign",
+    description: "Watch your brand grow as the creator shares your service with their engaged audience."
   }
 ];
 
@@ -137,7 +137,10 @@ const HowItWorks = ({ userType }: HowItWorksProps) => {
                 <div className="relative w-full aspect-video rounded-3xl overflow-hidden bg-gray-900">
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/xSPBVtdE_dI"
+                    src={userType === 'influencer' 
+                      ? "https://www.youtube.com/embed/fD_0aI0R4O4"
+                      : "https://www.youtube.com/embed/xSPBVtdE_dI"
+                    }
                     title="How InfluencersNepal Works"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

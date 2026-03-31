@@ -42,16 +42,10 @@ const Hero = ({ userType }: HeroProps) => {
                 href={userType === 'influencer' ? "https://forms.gle/noEwAYMB1KQbmVXi7" : "https://forms.gle/a5MMWkrgXHJ7fuVD7"}
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center justify-center bg-gray-900 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-gray-800 transition-all duration-300 shadow-xl hover:shadow-2xl active:scale-95"
+                className="group relative inline-flex items-center justify-center bg-gray-900 text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-gray-800 transition-all duration-300 shadow-xl hover:shadow-2xl active:scale-95 w-full sm:w-auto"
               >
                 {userType === 'influencer' ? 'Join as Influencer' : 'Register Business'}
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </a>
-              <a 
-                href="#how-it-works"
-                className="inline-flex items-center justify-center bg-white text-gray-900 border-2 border-gray-200 px-8 py-4 rounded-2xl font-bold text-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300 shadow-md active:scale-95"
-              >
-                Learn Process
               </a>
             </div>
 
@@ -71,15 +65,18 @@ const Hero = ({ userType }: HeroProps) => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/20 rounded-[3rem] transform rotate-3" />
               <img 
-                src="https://res.cloudinary.com/makegharghaderi/image/upload/v1738067875/influencer_marketing_nepal_2_rmnqiy.png"
-                alt="Influencer Marketing Nepal"
-                className="relative z-10 w-full h-auto rounded-[2.5rem] shadow-2xl border-8 border-white transform transition-transform duration-700 hover:scale-[1.03]"
+                src={userType === 'influencer' 
+                  ? `${import.meta.env.BASE_URL}influencers-nepal/Creator_workspace_with_202603311456.jpeg`
+                  : `${import.meta.env.BASE_URL}influencers-nepal/business.png`
+                }
+                alt={userType === 'influencer' ? "Influencer Opportunity" : "Influencer Marketing Nepal"}
+                className="relative z-10 w-full h-[500px] object-cover rounded-[2.5rem] shadow-2xl border-8 border-white transform transition-transform duration-700 hover:scale-[1.03]"
                 loading="lazy"
               />
               {/* Decorative badge */}
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-3xl shadow-2xl z-20 animate-bounce">
                 <div className="text-center">
-                  <p className="text-3xl font-black text-blue-600 leading-none">Rs. 200</p>
+                  <p className="text-3xl font-black text-blue-600 leading-none">Rs. 500</p>
                   <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">Starting Price</p>
                 </div>
               </div>

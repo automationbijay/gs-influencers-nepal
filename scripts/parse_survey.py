@@ -8,8 +8,12 @@ def clean_num(val):
         if isinstance(val, (int, float)): return int(val)
         val = str(val).lower().replace('k', '000').replace('m', '000000').replace(',', '').replace('+', '').strip()
         if '.' in val:
-            return int(float(val))
-        return int(val)
+            res = int(float(val))
+        else:
+            res = int(val)
+        # Minimum compensation floor for the platform
+        if 0 < res < 500: return 500
+        return res
     except:
         return 0
 

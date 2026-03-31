@@ -1,4 +1,6 @@
-const Footer = () => {
+import { UserType } from '../App'
+
+const Footer = ({ userType }: { userType: UserType }) => {
   return (
     <footer className="bg-gradient-to-br from-gray-900 to-blue-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -6,7 +8,9 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">INFLUENCERS NEPAL</h3>
             <p className="text-gray-300">
-              Your gateway to impactful collaborations with Nepali brands. Join us to monetize your influence.
+              {userType === 'influencer' 
+                ? "Your gateway to impactful collaborations with Nepali brands. Join us to monetize your influence."
+                : "Connect with verified local talent. Scale your business with creator-driven marketing."}
             </p>
           </div>
           

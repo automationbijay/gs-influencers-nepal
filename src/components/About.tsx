@@ -1,35 +1,64 @@
 import { Rocket, Users, Target, TrendingUp, ArrowRight, ShieldCheck } from 'lucide-react'
 import { useState } from 'react'
+import { UserType } from '../App'
 
-const features = [
+const influencerFeatures = [
   {
     icon: Users,
-    title: "Smart Matching",
-    description: "Connecting the right creators with the perfect brands using AI",
+    title: "Monetize Reach",
+    description: "Turn your social capital into sustainable income streams",
     color: "from-blue-500 to-indigo-600"
   },
   {
     icon: Target,
-    title: "Authentic Growth",
-    description: "Focus on genuine engagement and real results that matter",
+    title: "Vetted Deals",
+    description: "Get discovered by brands that genuinely value your niche",
     color: "from-purple-500 to-pink-600"
   },
   {
     icon: TrendingUp,
-    title: "Sustainable Earnings",
-    description: "Help creators build lasting and scalable income streams",
+    title: "Grow Career",
+    description: "Build a professional portfolio with real campaign results",
     color: "from-emerald-500 to-teal-600"
   },
   {
     icon: Rocket,
-    title: "Future Ready",
-    description: "Evolving with the digital marketing landscape in Nepal",
+    title: "Direct Access",
+    description: "No middlemen – negotiate terms directly with businesses",
     color: "from-orange-500 to-red-600"
   }
 ]
 
-const About = () => {
+const businessFeatures = [
+  {
+    icon: Users,
+    title: "Verified Talent",
+    description: "Access a directory of vetted, high-engagement creators",
+    color: "from-blue-500 to-indigo-600"
+  },
+  {
+    icon: Target,
+    title: "Niche Targeting",
+    description: "Find influencers whose audience perfectly fits your business",
+    color: "from-purple-500 to-pink-600"
+  },
+  {
+    icon: TrendingUp,
+    title: "Scalable Growth",
+    description: "Launch campaigns that drive real foot traffic and sales",
+    color: "from-emerald-500 to-teal-600"
+  },
+  {
+    icon: Rocket,
+    title: "Cost Effective",
+    description: "Collaborations starting at just Rs. 500 – maximum ROI",
+    color: "from-orange-500 to-red-600"
+  }
+]
+
+const About = ({ userType }: { userType: UserType }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
+  const features = userType === 'influencer' ? influencerFeatures : businessFeatures;
 
   return (
     <section id="about" className="py-24 relative overflow-hidden bg-white">
@@ -52,10 +81,10 @@ const About = () => {
                 We built this platform to solve a disconnect: Nepal's creators drown in self-promotion while businesses burn budgets on mismatched influencers.
               </p>
               <p className="text-blue-600 font-black text-2xl leading-tight mb-6">
-                Our answer? A bridge built on trust and data.
+                Currently in Market Testing: Zero Middlemen, Zero Commission.
               </p>
               <p className="text-gray-600 leading-relaxed text-xl">
-                Using smart algorithms, we pair hidden creative talent with brands that genuinely align with their audience, cutting out middlemen and guesswork.
+                Our goal is to reach 1000 verified influencers to prove that direct, data-driven connections are the future of Nepal's digital economy.
               </p>
             </div>
             

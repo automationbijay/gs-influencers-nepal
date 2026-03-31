@@ -23,40 +23,6 @@ const Loading = () => (
   </div>
 )
 
-const StickyCTA = ({ userType }: { userType: UserType }) => {
-  const [show, setShow] = useState(false)
-  const location = useLocation()
-
-  useEffect(() => {
-    const handleScroll = () => setShow(window.scrollY > 600)
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  // Don't show on the full influencer page as it has its own directory
-  if (!show || location.pathname === '/influencers') return null
-
-  const link = userType === 'influencer' 
-    ? "https://forms.gle/noEwAYMB1KQbmVXi7" 
-    : "https://forms.gle/a5MMWkrgXHJ7fuVD7";
-
-  return (
-    <div className="fixed bottom-8 left-8 z-50 animate-reveal">
-      <a 
-        href={link}
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="bg-blue-600 text-white px-6 py-3 rounded-full font-bold shadow-2xl hover:bg-blue-700 transition-all transform hover:scale-105 flex items-center space-x-2"
-      >
-        <span>{userType === 'influencer' ? 'Join as Influencer' : 'Register Business'}</span>
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-        </svg>
-      </a>
-    </div>
-  )
-}
-
 const Home = ({ userType }: { userType: UserType }) => {
   return (
     <>
@@ -76,7 +42,7 @@ const Home = ({ userType }: { userType: UserType }) => {
             <div className="text-center md:text-right">
               <div className="flex items-baseline justify-center md:justify-end space-x-2">
                 <span className="text-sm font-bold text-gray-400 uppercase tracking-widest">Starting at</span>
-                <span className="text-5xl font-black text-blue-600 tracking-tighter">Rs. 200</span>
+                <span className="text-5xl font-black text-blue-600 tracking-tighter">Rs. 500</span>
               </div>
               <p className="text-gray-500 mt-2 font-medium italic text-sm">Scalable up to Rs. 5,00,000 for mega-campaigns</p>
             </div>
@@ -85,12 +51,12 @@ const Home = ({ userType }: { userType: UserType }) => {
       </div>
       <HowItWorks userType={userType} />
       <div className="bg-gray-50">
-        <SuccessStories />
+        <SuccessStories userType={userType} />
       </div>
-      <InfluencerDirectory isFullPage={false} />
+      {userType === 'business' && <InfluencerDirectory isFullPage={false} />}
       <MountainDivider />
-      <About />
-      <FAQ />
+      <About userType={userType} />
+      <FAQ userType={userType} />
     </>
   )
 }
@@ -108,9 +74,8 @@ function App() {
             <Route path="/influencers" element={<InfluencerPage userType={userType} setUserType={setUserType} />} />
             <Route path="/influencer/:id" element={<InfluencerDetail userType={userType} setUserType={setUserType} />} />
           </Routes>
-          <Footer />
+          <Footer userType={userType} />
         </Suspense>
-        <StickyCTA userType={userType} />
       </div>
     </Router>
   )

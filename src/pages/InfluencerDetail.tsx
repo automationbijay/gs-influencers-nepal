@@ -60,6 +60,12 @@ const InfluencerDetail = ({ userType, setUserType }: InfluencerDetailProps) => {
 
   useEffect(() => {
     window.scrollTo(0, 0)
+    
+    if (userType === 'influencer') {
+      navigate('/')
+      return
+    }
+
     const fetchData = async () => {
       try {
         const response = await fetch(`${import.meta.env.BASE_URL}data/influencers.json`)
