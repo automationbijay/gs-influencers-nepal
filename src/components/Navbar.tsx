@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react'
 import { Menu, X, Users, Briefcase } from 'lucide-react'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { UserType } from '../App'
 
 const navItems = [
-  { id: 'home', label: 'Home' },
-  { id: 'how-it-works', label: 'How It Works' },
-  { id: 'success-stories', label: 'Success' },
-  { id: 'directory', label: 'Directory' },
-  { id: 'about', label: 'About' },
-  { id: 'faq', label: 'FAQs' }
+  { id: 'home', label: 'Home', path: '/' },
+  { id: 'how-it-works', label: 'How It Works', path: '/#how-it-works' },
+  { id: 'influencers', label: 'Influencers', path: '/influencers' },
+  { id: 'about', label: 'About', path: '/#about' },
+  { id: 'faq', label: 'FAQs', path: '/#faq' }
 ]
 
 interface NavbarProps {
@@ -20,38 +20,57 @@ const Navbar = ({ userType, setUserType }: NavbarProps) => {
   const [activeSection, setActiveSection] = useState('home')
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const location = useLocation()
+  const navigate = useNavigate()
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
-      const sections = document.querySelectorAll('section[id]')
-      const scrollPosition = window.scrollY + 100
+      
+      if (location.pathname === '/') {
+        const sections = document.querySelectorAll('section[id]')
+        const scrollPosition = window.scrollY + 100
 
-      sections.forEach(section => {
-        const sectionTop = (section as HTMLElement).offsetTop
-        const sectionHeight = section.clientHeight
-        const sectionId = section.getAttribute('id') || ''
-        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-          setActiveSection(sectionId)
-        }
-      })
+        sections.forEach(section => {
+          const sectionTop = (section as HTMLElement).offsetTop
+          const sectionHeight = section.clientHeight
+          const sectionId = section.getAttribute('id') || ''
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            setActiveSection(sectionId)
+          }
+        })
+      } else if (location.pathname === '/influencers') {
+        setActiveSection('influencers')
+      }
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [location.pathname])
 
-  const handleNavClick = (id: string) => {
+  const handleNavClick = (item: typeof navItems[0]) => {
     setIsMobileMenuOpen(false)
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+    
+    if (item.path.startsWith('/#')) {
+      const id = item.path.substring(2)
+      if (location.pathname !== '/') {
+        navigate('/')
+        setTimeout(() => {
+          const element = document.getElementById(id)
+          if (element) element.scrollIntoView({ behavior: 'smooth' })
+        }, 100)
+      } else {
+        const element = document.getElementById(id)
+        if (element) element.scrollIntoView({ behavior: 'smooth' })
+      }
+    } else {
+      navigate(item.path)
     }
   }
 
   return (
     <nav 
       className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-        isScrolled 
+        isScrolled || location.pathname !== '/'
           ? 'bg-white/95 backdrop-blur-md shadow-lg py-2' 
           : 'bg-transparent py-4'
       }`}
@@ -59,9 +78,9 @@ const Navbar = ({ userType, setUserType }: NavbarProps) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex flex-col">
-            <span className="font-black text-xl gradient-text tracking-tighter">
+            <Link to="/" className="font-black text-xl gradient-text tracking-tighter">
               INFLUENCERS NEPAL
-            </span>
+            </Link>
             <div className="flex mt-1 bg-gray-100 p-1 rounded-lg w-fit">
               <button 
                 onClick={() => setUserType('influencer')}
@@ -88,7 +107,7 @@ const Navbar = ({ userType, setUserType }: NavbarProps) => {
             {navItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => handleNavClick(item.id)}
+                onClick={() => handleNavClick(item)}
                 className={`nav-link font-bold text-sm uppercase tracking-widest ${
                   activeSection === item.id ? 'active' : ''
                 }`}
@@ -115,7 +134,7 @@ const Navbar = ({ userType, setUserType }: NavbarProps) => {
             {navItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => handleNavClick(item.id)}
+                onClick={() => handleNavClick(item)}
                 className={`block w-full text-left px-6 py-4 rounded-2xl transition-all duration-300 font-bold ${
                   activeSection === item.id
                     ? 'bg-blue-50 text-blue-600'

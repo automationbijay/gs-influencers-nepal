@@ -34,6 +34,8 @@ def parse():
     fb_col = next((c for c in df.columns if 'Facebook Page?' in c), None)
     location_col = next((c for c in df.columns if 'reside in' in c.lower()), None)
     platform_col = next((c for c in df.columns if 'primary social media platform' in c.lower()), None)
+    age_col = next((c for c in df.columns if 'age group' in c.lower()), None)
+    comp_col = next((c for c in df.columns if 'compensated' in c.lower()), None)
 
     influencers = []
     seen_names = set()
@@ -49,16 +51,23 @@ def parse():
         seen_names.add(name)
 
         # Reach calculation
-        f_count = clean_num(row.get(insta_col, 0)) + \
-                  clean_num(row.get(tiktok_col, 0)) + \
-                  clean_num(row.get(yt_col, 0)) + \
-                  clean_num(row.get(fb_col, 0))
+        insta = clean_num(row.get(insta_col, 0))
+        tiktok = clean_num(row.get(tiktok_col, 0))
+        yt = clean_num(row.get(yt_col, 0))
+        fb = clean_num(row.get(fb_col, 0))
+        f_count = insta + tiktok + yt + fb
         
         platform = str(row.get(platform_col, 'Instagram'))
-        if platform == 'nan': platform = 'Creator'
+        if platform == 'nan' or platform == 'None': platform = 'Creator'
 
         location = str(row.get(location_col, 'Nepal'))
         if location == 'nan': location = 'Nepal'
+
+        age = str(row.get(age_col, 'All Ages'))
+        if age == 'nan': age = 'All Ages'
+
+        comp = str(row.get(comp_col, 'Contact for details'))
+        if comp == 'nan': comp = 'Contact for details'
 
         influencers.append({
             'id': 1000 + i,
@@ -66,7 +75,11 @@ def parse():
             'handle': f"@{name.lower().replace(' ', '_')}",
             'niche': "Digital Creator",
             'followers': format_reach(f_count),
+            'followers_raw': f_count,
             'platform': platform,
+            'location': location,
+            'age_group': age,
+            'compensation': comp,
             'image': f"https://api.dicebear.com/7.x/avataaars/svg?seed={name.replace(' ', '')}",
             'bio': f"Creative talent based in {location}. Open for meaningful collaborations."
         })

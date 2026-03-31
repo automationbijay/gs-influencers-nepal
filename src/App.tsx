@@ -1,4 +1,5 @@
 import { lazy, Suspense, useState, useEffect } from 'react'
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import MountainDivider from './components/MountainDivider'
 
@@ -10,6 +11,7 @@ const InfluencerDirectory = lazy(() => import('./components/InfluencerDirectory'
 const About = lazy(() => import('./components/About'))
 const FAQ = lazy(() => import('./components/FAQ'))
 const Footer = lazy(() => import('./components/Footer'))
+const InfluencerPage = lazy(() => import('./pages/InfluencerPage'))
 
 export type UserType = 'influencer' | 'business';
 
@@ -22,6 +24,7 @@ const Loading = () => (
 
 const StickyCTA = ({ userType }: { userType: UserType }) => {
   const [show, setShow] = useState(false)
+  const location = useLocation()
 
   useEffect(() => {
     const handleScroll = () => setShow(window.scrollY > 600)
@@ -29,7 +32,8 @@ const StickyCTA = ({ userType }: { userType: UserType }) => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  if (!show) return null
+  // Don't show on the full influencer page as it has its own directory
+  if (!show || location.pathname === '/influencers') return null
 
   const link = userType === 'influencer' 
     ? "https://forms.gle/noEwAYMB1KQbmVXi7" 
@@ -52,50 +56,61 @@ const StickyCTA = ({ userType }: { userType: UserType }) => {
   )
 }
 
+const Home = ({ userType }: { userType: UserType }) => {
+  return (
+    <>
+      <Hero userType={userType} />
+      <MountainDivider />
+      <div className="py-12 bg-blue-50/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-blue-100 flex flex-col md:flex-row items-center justify-between">
+            <div className="mb-8 md:mb-0">
+              <h2 className="text-3xl md:text-4xl font-black mb-4">Flexible <span className="gradient-text">Pricing</span></h2>
+              <p className="text-gray-600 text-lg">
+                {userType === 'influencer' 
+                  ? 'Monetize your content with deals ranging from' 
+                  : 'Launch impactful campaigns with budgets from'}
+              </p>
+            </div>
+            <div className="text-center md:text-right">
+              <div className="flex items-baseline justify-center md:justify-end space-x-2">
+                <span className="text-sm font-bold text-gray-400 uppercase tracking-widest">Starting at</span>
+                <span className="text-5xl font-black text-blue-600 tracking-tighter">Rs. 200</span>
+              </div>
+              <p className="text-gray-500 mt-2 font-medium italic text-sm">Scalable up to Rs. 5,00,000 for mega-campaigns</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <HowItWorks userType={userType} />
+      <div className="bg-gray-50">
+        <SuccessStories />
+      </div>
+      <InfluencerDirectory isFullPage={false} />
+      <MountainDivider />
+      <About />
+      <FAQ />
+    </>
+  )
+}
+
 function App() {
   const [userType, setUserType] = useState<UserType>('influencer');
 
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar userType={userType} setUserType={setUserType} />
-      <Suspense fallback={<Loading />}>
-        <main>
-          <Hero userType={userType} />
-          <MountainDivider />
-          <div className="py-12 bg-blue-50/30">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-blue-100 flex flex-col md:flex-row items-center justify-between">
-                <div className="mb-8 md:mb-0">
-                  <h2 className="text-3xl md:text-4xl font-black mb-4">Flexible <span className="gradient-text">Pricing</span></h2>
-                  <p className="text-gray-600 text-lg">
-                    {userType === 'influencer' 
-                      ? 'Monetize your content with deals ranging from' 
-                      : 'Launch impactful campaigns with budgets from'}
-                  </p>
-                </div>
-                <div className="text-center md:text-right">
-                  <div className="flex items-baseline justify-center md:justify-end space-x-2">
-                    <span className="text-sm font-bold text-gray-400 uppercase tracking-widest">Starting at</span>
-                    <span className="text-5xl font-black text-blue-600 tracking-tighter">Rs. 200</span>
-                  </div>
-                  <p className="text-gray-500 mt-2 font-medium italic text-sm">Scalable up to Rs. 5,00,000 for mega-campaigns</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <HowItWorks userType={userType} />
-          <div className="bg-gray-50">
-            <SuccessStories />
-          </div>
-          <InfluencerDirectory />
-          <MountainDivider />
-          <About />
-          <FAQ />
-        </main>
-        <Footer />
-      </Suspense>
-      <StickyCTA userType={userType} />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-white">
+        <Navbar userType={userType} setUserType={setUserType} />
+        <Suspense fallback={<Loading />}>
+          <Routes>
+            <Route path="/" element={<Home userType={userType} />} />
+            <Route path="/influencers" element={<InfluencerPage userType={userType} setUserType={setUserType} />} />
+          </Routes>
+          <Footer />
+        </Suspense>
+        <StickyCTA userType={userType} />
+      </div>
+    </Router>
   )
 }
 
