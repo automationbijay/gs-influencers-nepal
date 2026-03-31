@@ -16,8 +16,6 @@ import {
   TrendingUp,
   Target
 } from 'lucide-react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import { UserType } from '../App'
 
 interface Influencer {
@@ -64,14 +62,11 @@ const InfluencerDetail = ({ userType, setUserType }: InfluencerDetailProps) => {
     window.scrollTo(0, 0)
     const fetchData = async () => {
       try {
-        const response = await fetch('./data/influencers.json')
-        let data: Influencer[] = []
+        const response = await fetch(`${import.meta.env.BASE_URL}data/influencers.json`)
         if (!response.ok) {
-          const fallbackResponse = await fetch('data/influencers.json')
-          data = await fallbackResponse.json()
-        } else {
-          data = await response.json()
+          throw new Error('Data fetch failed');
         }
+        const data: Influencer[] = await response.json()
         
         const found = data.find(inf => inf.id.toString() === id)
         if (found) {
@@ -107,7 +102,6 @@ const InfluencerDetail = ({ userType, setUserType }: InfluencerDetailProps) => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar userType={userType} setUserType={setUserType} />
       
       <main className="pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -293,8 +287,6 @@ const InfluencerDetail = ({ userType, setUserType }: InfluencerDetailProps) => {
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   )
 }

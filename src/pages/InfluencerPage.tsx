@@ -1,6 +1,4 @@
 import InfluencerDirectory from '../components/InfluencerDirectory'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
 import { UserType } from '../App'
 import { useEffect } from 'react'
 
@@ -16,11 +14,9 @@ const InfluencerPage = ({ userType, setUserType }: InfluencerPageProps) => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Navbar userType={userType} setUserType={setUserType} />
       <main>
         <InfluencerDirectory isFullPage={true} />
       </main>
-      <Footer />
     </div>
   )
 }

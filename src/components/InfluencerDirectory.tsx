@@ -46,15 +46,12 @@ const InfluencerDirectory = ({ isFullPage = false }: DirectoryProps) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('./data/influencers.json')
+        const response = await fetch(`${import.meta.env.BASE_URL}data/influencers.json`)
         if (!response.ok) {
-          const fallbackResponse = await fetch('data/influencers.json')
-          const data = await fallbackResponse.json()
-          setInfluencers(data)
-        } else {
-          const data = await response.json()
-          setInfluencers(data)
+          throw new Error('Data fetch failed');
         }
+        const data = await response.json()
+        setInfluencers(data)
       } catch (error) {
         console.error("Error fetching influencers:", error)
       } finally {

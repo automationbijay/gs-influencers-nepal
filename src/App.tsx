@@ -41,7 +41,7 @@ const StickyCTA = ({ userType }: { userType: UserType }) => {
     : "https://forms.gle/a5MMWkrgXHJ7fuVD7";
 
   return (
-    <div className="fixed bottom-8 right-8 z-50 animate-reveal">
+    <div className="fixed bottom-8 left-8 z-50 animate-reveal">
       <a 
         href={link}
         target="_blank" 
@@ -99,7 +99,7 @@ function App() {
   const [userType, setUserType] = useState<UserType>('influencer');
 
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen bg-white">
         <Navbar userType={userType} setUserType={setUserType} />
         <Suspense fallback={<Loading />}>

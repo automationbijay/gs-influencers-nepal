@@ -5,6 +5,7 @@ Welcome to the **Influencers Nepal** project repository. This directory centrali
 ## Directory Contents
 
 - **README.md**: This file, providing an overview of the project.
+- **business-model.md**: The primary focus and operational model for Phase 1.
 - **influencersnepal.md**: A comprehensive overview of the platform's features, including how it works, success stories, and FAQs.
 - **Influencer .docx**: Additional documentation related to influencers (Binary format).
 - **Influencers Survey .xlsx**: Data and results from influencer surveys (Binary format).
