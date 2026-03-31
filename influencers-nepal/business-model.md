@@ -9,12 +9,12 @@ The primary goal is to test the market demand by bridging the gap between local 
 
 ## Operational Model (Market Testing Phase)
 
-### 1. Data Collection & Automation
-- **Method:** Influencers provide their information via a Google Form.
-- **Automation (n8n):** An n8n workflow intercepts the Google Form submission to:
+### 1. Data Collection & Updates
+- **Method:** Influencers provide and manage their information via a secure Google Form.
+- **Authentication:** By using Google Forms, creators can log in with their Google accounts to update their details at any time, ensuring the directory remains current.
+- **Automation (n8n):** An n8n workflow intercepts the Google Form submissions to:
   - Validate user details and social media links.
   - Automatically update the `influencers.json` file used by the frontend.
-- **Content:** Profiles include niche, social media reach, and communication modes.
 
 ### 2. Data Management & Delivery
 - **Static Architecture:** High-performance static site fetching from a central `json` file.
