@@ -6,6 +6,7 @@ import MountainDivider from './components/MountainDivider'
 const Hero = lazy(() => import('./components/Hero'))
 const HowItWorks = lazy(() => import('./components/HowItWorks'))
 const SuccessStories = lazy(() => import('./components/SuccessStories'))
+const InfluencerDirectory = lazy(() => import('./components/InfluencerDirectory'))
 const About = lazy(() => import('./components/About'))
 const FAQ = lazy(() => import('./components/FAQ'))
 const Footer = lazy(() => import('./components/Footer'))
@@ -86,6 +87,7 @@ function App() {
           <div className="bg-gray-50">
             <SuccessStories />
           </div>
+          <InfluencerDirectory />
           <MountainDivider />
           <About />
           <FAQ />

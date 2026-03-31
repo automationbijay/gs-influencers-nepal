@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Anika Sharma",
+    "handle": "@anika_arts",
+    "niche": "Artist / Painter",
+    "followers": "50K",
+    "platform": "Instagram",
+    "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Anika",
+    "bio": "Transforming spaces through contemporary art and murals."
+  },
+  {
+    "id": 2,
+    "name": "Raj Thapa",
+    "handle": "@raj_fitness_np",
+    "niche": "Fitness Coach",
+    "followers": "120K",
+    "platform": "TikTok",
+    "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Raj",
+    "bio": "Helping you achieve your peak physical form through traditional and modern techniques."
+  },
+  {
+    "id": 3,
+    "name": "Priya Gurung",
+    "handle": "@priya_educates",
+    "niche": "Educator / STEM",
+    "followers": "85K",
+    "platform": "YouTube",
+    "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Priya",
+    "bio": "Making STEM education accessible and fun for the next generation of Nepali students."
+  },
+  {
+    "id": 4,
+    "name": "Samir KC",
+    "handle": "@samir_vlogs",
+    "niche": "Travel / Adventure",
+    "followers": "200K",
+    "platform": "Instagram",
+    "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Samir",
+    "bio": "Exploring the hidden gems of the Himalayas, one vlog at a time."
+  },
+  {
+    "id": 5,
+    "name": "Maya Adhikari",
+    "handle": "@maya_cooks_nepal",
+    "niche": "Food / Culinary",
+    "followers": "45K",
+    "platform": "Facebook",
+    "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Maya",
+    "bio": "Authentic Nepali recipes passed down through generations."
+  },
+  {
+    "id": 6,
+    "name": "Binod Bhattarai",
+    "handle": "@binod_tech",
+    "niche": "Tech / Gadgets",
+    "followers": "30K",
+    "platform": "YouTube",
+    "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Binod",
+    "bio": "Honest tech reviews and gadget unboxings for the Nepali market."
+  },
+  {
+    "id": 7,
+    "name": "Sita Lama",
+    "handle": "@sita_style",
+    "niche": "Fashion / Lifestyle",
+    "followers": "15K",
+    "platform": "Instagram",
+    "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sita",
+    "bio": "Bringing traditional Nepali fashion to the modern runway."
+  },
+  {
+    "id": 8,
+    "name": "Arjun Shrestha",
+    "handle": "@arjun_gaming",
+    "niche": "Gaming / Esports",
+    "followers": "300K",
+    "platform": "TikTok",
+    "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Arjun",
+    "bio": "Competitive mobile gaming and live streams."
+  }
+]

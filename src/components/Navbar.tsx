@@ -5,7 +5,8 @@ import { UserType } from '../App'
 const navItems = [
   { id: 'home', label: 'Home' },
   { id: 'how-it-works', label: 'How It Works' },
-  { id: 'success-stories', label: 'Success Stories' },
+  { id: 'success-stories', label: 'Success' },
+  { id: 'directory', label: 'Directory' },
   { id: 'about', label: 'About' },
   { id: 'faq', label: 'FAQs' }
 ]
