@@ -135,15 +135,31 @@ const InfluencerDirectory = () => {
                   <p className="text-gray-500 text-sm line-clamp-2 italic mb-6 leading-relaxed">
                     "{inf.bio}"
                   </p>
-                  <button className="w-full py-3 bg-gray-50 text-gray-900 rounded-2xl font-bold text-sm hover:bg-blue-600 hover:text-white transition-all flex items-center justify-center group/btn">
-                    View Profile
-                    <ExternalLink className="w-4 h-4 ml-2 opacity-0 group-hover/btn:opacity-100 transition-all transform group-hover/btn:translate-x-1" />
-                  </button>
+                  <div className="space-y-3">
+                    <button className="w-full py-3 bg-blue-600 text-white rounded-2xl font-bold text-sm hover:bg-blue-700 transition-all flex items-center justify-center shadow-lg shadow-blue-100">
+                      Collaborate
+                    </button>
+                    <button className="w-full py-2 bg-gray-50 text-gray-400 rounded-xl font-bold text-[10px] uppercase tracking-widest hover:text-blue-600 transition-all border border-transparent hover:border-blue-100">
+                      Request Contact (Verified)
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
         )}
+
+        <div className="mt-20 p-8 bg-blue-50 rounded-[2.5rem] border border-blue-100 text-center animate-reveal">
+          <h3 className="text-xl font-bold text-blue-900 mb-2">Privacy & Verification</h3>
+          <p className="text-blue-700 text-sm max-w-2xl mx-auto leading-relaxed">
+            To respect creator privacy, contact details are not displayed publicly. 
+            Only <strong>Verified Businesses</strong> can access direct contact info by communicating with our team. 
+            The directory is free for everyone to join and browse.
+          </p>
+          <a href="mailto:admin@influencersnepal.com" className="mt-6 inline-block text-blue-600 font-bold hover:underline">
+            Contact us for business verification &rarr;
+          </a>
+        </div>
 
         {!isLoading && filteredInfluencers.length === 0 && (
           <div className="text-center py-20 bg-gray-50 rounded-[3rem] border-2 border-dashed border-gray-200">
