@@ -1,48 +1,80 @@
 import { useState } from 'react'
-import { CheckCircle2 } from 'lucide-react'
+import { UserType } from '../App'
 
-const steps = [
+interface HowItWorksProps {
+  userType: UserType;
+}
+
+const influencerSteps = [
   {
     number: 1,
     title: "Sign Up",
-    description: "Click on 'Join as Influencer' and fill out your profile",
-    icon: CheckCircle2
+    description: "Click on 'Join as Influencer' and fill out your niche and audience details."
   },
   {
     number: 2,
-    title: "Link Your Accounts",
-    description: "Authenticate your social media accounts to ensure seamless data integration",
-    icon: CheckCircle2
+    title: "Link Accounts",
+    description: "Authenticate your social media profiles to verify your reach and engagement."
   },
   {
     number: 3,
     title: "Get Matched",
-    description: "Get connected with businesses that align with your niche and goals",
-    icon: CheckCircle2
+    description: "Receive deal offers from businesses that align perfectly with your content style."
   },
   {
     number: 4,
-    title: "Chat & Collaborate",
-    description: "Connect with brands using our built-in chat feature to discuss campaign details",
-    icon: CheckCircle2
+    title: "Collaborate",
+    description: "Chat directly with brands to discuss campaign creative and timelines."
   },
   {
     number: 5,
-    title: "Track & Report",
-    description: "Access detailed analytics of your campaign's performance through your influencer dashboard",
-    icon: CheckCircle2
+    title: "Earn & Grow",
+    description: "Execute campaigns, get paid, and build your professional portfolio."
   }
-]
+];
 
-const HowItWorks = () => {
+const businessSteps = [
+  {
+    number: 1,
+    title: "Register",
+    description: "Create your business profile and define your marketing objectives."
+  },
+  {
+    number: 2,
+    title: "Post Campaign",
+    description: "Describe your service or product and set your desired budget range."
+  },
+  {
+    number: 3,
+    title: "Discovery",
+    description: "Our AI suggests the best-fit creators based on their actual social capital."
+  },
+  {
+    number: 4,
+    title: "Management",
+    description: "Coordinate with influencers through our built-in communication tools."
+  },
+  {
+    number: 5,
+    title: "Analyze",
+    description: "Track campaign performance and see real ROI on your marketing spend."
+  }
+];
+
+const HowItWorks = ({ userType }: HowItWorksProps) => {
   const [activeStep, setActiveStep] = useState(0)
+  const steps = userType === 'influencer' ? influencerSteps : businessSteps;
 
   return (
-    <section id="how-it-works" className="py-16 bg-gradient-to-br from-indigo-50 to-purple-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-16 gradient-text">
-          How InfluencersNepal works?
-        </h2>
+    <section id="how-it-works" className="py-24 bg-white relative">
+      <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="text-center mb-20 animate-reveal">
+          <h2 className="text-4xl font-black mb-4 text-gray-900">
+            How <span className="gradient-text italic">InfluencersNepal</span> Works
+          </h2>
+          <div className="h-1.5 w-20 bg-blue-600 mx-auto rounded-full" />
+        </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Steps */}
@@ -50,57 +82,61 @@ const HowItWorks = () => {
             {steps.map((step, index) => (
               <div
                 key={index}
-                className={`relative pl-12 transition-all duration-300 cursor-pointer group`}
+                className="relative pl-16 animate-reveal cursor-pointer group"
+                style={{ animationDelay: `${index * 0.1}s` }}
                 onMouseEnter={() => setActiveStep(index)}
               >
                 {/* Vertical line */}
                 {index !== steps.length - 1 && (
                   <div 
-                    className={`absolute left-[1.3rem] top-12 w-0.5 h-12 
-                      ${index < activeStep ? 'bg-purple-500' : 'bg-gray-200'}`}
+                    className={`absolute left-[1.95rem] top-14 w-0.5 h-12 
+                      ${index < activeStep ? 'bg-blue-500' : 'bg-gray-100'}`}
                   />
                 )}
                 
                 {/* Step number */}
                 <div 
-                  className={`absolute left-0 w-10 h-10 rounded-full flex items-center justify-center text-lg font-semibold
+                  className={`absolute left-0 w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-black
                     ${index <= activeStep 
-                      ? 'bg-purple-600 text-white' 
-                      : 'bg-gray-100 text-gray-400'
-                    } transition-all duration-300`}
+                      ? 'bg-blue-600 text-white shadow-lg' 
+                      : 'bg-blue-50 text-blue-200'
+                    } transition-all duration-500 transform group-hover:rotate-6`}
                 >
                   {step.number}
                 </div>
 
                 {/* Content */}
                 <div 
-                  className={`p-4 rounded-lg transition-all duration-300
+                  className={`p-6 rounded-3xl transition-all duration-500
                     ${index === activeStep 
-                      ? 'bg-white shadow-lg scale-[1.02]' 
-                      : 'hover:bg-white/50'
+                      ? 'bg-white shadow-2xl border border-blue-50 scale-[1.03]' 
+                      : 'hover:bg-blue-50/50'
                     }`}
                 >
-                  <h3 className={`font-semibold text-lg mb-1
-                    ${index === activeStep ? 'gradient-text' : 'text-gray-700'}`}>
+                  <h3 className={`font-black text-xl mb-2
+                    ${index === activeStep ? 'text-blue-600' : 'text-gray-800'}`}>
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 text-sm">{step.description}</p>
+                  <p className="text-gray-500 leading-relaxed italic text-sm">{step.description}</p>
                 </div>
               </div>
             ))}
           </div>
 
           {/* Video Section */}
-          <div className="relative h-full flex items-center">
+          <div className="relative h-full flex items-center animate-reveal" style={{ animationDelay: '0.4s' }}>
             <div className="relative w-full group">
-              {/* Gradient border effect */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200" />
+              {/* Decorative elements */}
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-blue-100 rounded-full blur-3xl opacity-60 animate-pulse" />
+              <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-purple-100 rounded-full blur-3xl opacity-60 animate-pulse delay-700" />
+              
+              <div className="absolute -inset-4 bg-gradient-to-tr from-blue-600/10 to-purple-600/10 rounded-[3rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-1000" />
               
               {/* Video container */}
-              <div className="relative bg-white rounded-lg p-2">
-                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <div className="relative bg-white rounded-[2.5rem] p-4 shadow-2xl border border-gray-100 overflow-hidden">
+                <div className="relative w-full aspect-video rounded-3xl overflow-hidden bg-gray-900">
                   <iframe
-                    className="absolute top-0 left-0 w-full h-full rounded-lg"
+                    className="absolute top-0 left-0 w-full h-full"
                     src="https://www.youtube.com/embed/xSPBVtdE_dI"
                     title="How InfluencersNepal Works"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

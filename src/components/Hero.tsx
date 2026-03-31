@@ -1,6 +1,11 @@
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { UserType } from '../App';
 
-const Hero = () => {
+interface HeroProps {
+  userType: UserType;
+}
+
+const Hero = ({ userType }: HeroProps) => {
   return (
     <section id="home" className="relative pt-32 pb-24 overflow-hidden bg-white bg-grid-pattern">
       {/* Animated Background Elements */}
@@ -15,37 +20,38 @@ const Hero = () => {
           <div className="relative z-10 animate-reveal">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-bold mb-8 border border-blue-100 shadow-sm">
               <Sparkles className="w-4 h-4 mr-2" />
-              Empowering Nepal's Digital Creators
+              {userType === 'influencer' ? "Monetize Your Digital Presence" : "Scale Your Business with Creators"}
             </div>
             
             <h1 className="text-5xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tight text-gray-900">
-              Your Gateway to <br />
-              <span className="gradient-text italic">Impactful</span> <br />
-              Collaborations
+              {userType === 'influencer' ? (
+                <>Your Gateway to <br /> <span className="gradient-text italic">Premium</span> <br /> Brand Deals</>
+              ) : (
+                <>Connect with <br /> <span className="gradient-text italic">Vetted</span> <br /> Nepali Talent</>
+              )}
             </h1>
             
             <p className="text-gray-600 mb-10 text-xl leading-relaxed max-w-lg">
-              We bridge the gap between niche Nepali talent and local businesses. 
-              Grow your brand authentically through meaningful partnerships.
+              {userType === 'influencer' 
+                ? "We help you turn your social capital into sustainable income by matching you with brands that genuinely value your niche."
+                : "Stop burning marketing budgets. Use our smart matching to find influencers whose audience actually buys what you sell."}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-5">
               <a 
-                href="https://forms.gle/noEwAYMB1KQbmVXi7" 
+                href={userType === 'influencer' ? "https://forms.gle/noEwAYMB1KQbmVXi7" : "https://forms.gle/a5MMWkrgXHJ7fuVD7"}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center justify-center bg-gray-900 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-gray-800 transition-all duration-300 shadow-xl hover:shadow-2xl active:scale-95"
               >
-                Join as Influencer
+                {userType === 'influencer' ? 'Join as Influencer' : 'Register Business'}
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </a>
               <a 
-                href="https://forms.gle/a5MMWkrgXHJ7fuVD7" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="#how-it-works"
                 className="inline-flex items-center justify-center bg-white text-gray-900 border-2 border-gray-200 px-8 py-4 rounded-2xl font-bold text-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300 shadow-md active:scale-95"
               >
-                Register Business
+                Learn Process
               </a>
             </div>
 
@@ -53,11 +59,11 @@ const Hero = () => {
               <div className="flex -space-x-3">
                 {[1,2,3,4].map((i) => (
                   <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-gray-200 overflow-hidden shadow-sm">
-                    <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i + 10}`} alt="User" />
+                    <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i + (userType === 'influencer' ? 10 : 20)}`} alt="User" />
                   </div>
                 ))}
               </div>
-              <p>Trusted by <span className="text-gray-900 font-bold">100+</span> creators & businesses</p>
+              <p>Trusted by <span className="text-gray-900 font-bold">100+</span> {userType === 'influencer' ? 'creators' : 'businesses'}</p>
             </div>
           </div>
 
@@ -73,8 +79,8 @@ const Hero = () => {
               {/* Decorative badge */}
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-3xl shadow-2xl z-20 animate-bounce">
                 <div className="text-center">
-                  <p className="text-3xl font-black text-blue-600 leading-none">75K+</p>
-                  <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">NPR / Month</p>
+                  <p className="text-3xl font-black text-blue-600 leading-none">Rs. 200</p>
+                  <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">Starting Price</p>
                 </div>
               </div>
             </div>

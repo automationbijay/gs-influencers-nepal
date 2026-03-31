@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Users, Briefcase } from 'lucide-react'
+import { UserType } from '../App'
 
 const navItems = [
   { id: 'home', label: 'Home' },
@@ -9,16 +10,19 @@ const navItems = [
   { id: 'faq', label: 'FAQs' }
 ]
 
-const Navbar = () => {
+interface NavbarProps {
+  userType: UserType;
+  setUserType: (type: UserType) => void;
+}
+
+const Navbar = ({ userType, setUserType }: NavbarProps) => {
   const [activeSection, setActiveSection] = useState('home')
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const [hoveredItem, setHoveredItem] = useState<string | null>(null)
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
-
       const sections = document.querySelectorAll('section[id]')
       const scrollPosition = window.scrollY + 100
 
@@ -26,13 +30,11 @@ const Navbar = () => {
         const sectionTop = (section as HTMLElement).offsetTop
         const sectionHeight = section.clientHeight
         const sectionId = section.getAttribute('id') || ''
-
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
           setActiveSection(sectionId)
         }
       })
     }
-
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
@@ -49,30 +51,45 @@ const Navbar = () => {
     <nav 
       className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'bg-white/90 backdrop-blur-sm shadow-lg py-2' 
+          ? 'bg-white/95 backdrop-blur-md shadow-lg py-2' 
           : 'bg-transparent py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <div className="flex-shrink-0">
-            <span className="font-bold text-xl gradient-text">
+          <div className="flex flex-col">
+            <span className="font-black text-xl gradient-text tracking-tighter">
               INFLUENCERS NEPAL
             </span>
+            <div className="flex mt-1 bg-gray-100 p-1 rounded-lg w-fit">
+              <button 
+                onClick={() => setUserType('influencer')}
+                className={`flex items-center space-x-1 px-3 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider transition-all ${
+                  userType === 'influencer' ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-700'
+                }`}
+              >
+                <Users className="w-3 h-3" />
+                <span>Influencer</span>
+              </button>
+              <button 
+                onClick={() => setUserType('business')}
+                className={`flex items-center space-x-1 px-3 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider transition-all ${
+                  userType === 'business' ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-700'
+                }`}
+              >
+                <Briefcase className="w-3 h-3" />
+                <span>Business</span>
+              </button>
+            </div>
           </div>
           
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                onMouseEnter={() => setHoveredItem(item.id)}
-                onMouseLeave={() => setHoveredItem(null)}
-                className={`nav-link ${
+                className={`nav-link font-bold text-sm uppercase tracking-widest ${
                   activeSection === item.id ? 'active' : ''
-                } ${
-                  hoveredItem === item.id ? 'text-blue-600' : ''
                 }`}
               >
                 {item.label}
@@ -80,36 +97,28 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Mobile menu button */}
           <button 
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="md:hidden p-2 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? (
-              <X className="h-6 w-6 text-gray-700" />
-            ) : (
-              <Menu className="h-6 w-6 text-gray-700" />
-            )}
+            {isMobileMenuOpen ? <X className="h-6 w-6 text-gray-700" /> : <Menu className="h-6 w-6 text-gray-700" />}
           </button>
         </div>
 
-        {/* Mobile Menu */}
         <div 
           className={`md:hidden transition-all duration-300 ease-in-out ${
-            isMobileMenuOpen 
-              ? 'max-h-96 opacity-100' 
-              : 'max-h-0 opacity-0'
+            isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
           } overflow-hidden`}
         >
-          <div className="px-2 pt-2 pb-3 space-y-1 bg-white/90 backdrop-blur-sm mt-2 rounded-lg">
+          <div className="px-2 pt-4 pb-3 space-y-1 bg-white shadow-2xl mt-4 rounded-3xl border border-gray-100">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`block w-full text-left px-4 py-2 rounded-lg transition-all duration-300 ${
+                className={`block w-full text-left px-6 py-4 rounded-2xl transition-all duration-300 font-bold ${
                   activeSection === item.id
-                    ? 'bg-blue-50 text-blue-600 font-medium'
-                    : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
+                    ? 'bg-blue-50 text-blue-600'
+                    : 'text-gray-700 hover:bg-gray-50'
                 }`}
               >
                 {item.label}
