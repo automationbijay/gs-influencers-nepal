@@ -1,5 +1,5 @@
 import { lazy, Suspense, useState, useEffect } from 'react'
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import MountainDivider from './components/MountainDivider'
 
@@ -12,6 +12,7 @@ const About = lazy(() => import('./components/About'))
 const FAQ = lazy(() => import('./components/FAQ'))
 const Footer = lazy(() => import('./components/Footer'))
 const InfluencerPage = lazy(() => import('./pages/InfluencerPage'))
+const InfluencerDetail = lazy(() => import('./pages/InfluencerDetail'))
 
 export type UserType = 'influencer' | 'business';
 
@@ -105,6 +106,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home userType={userType} />} />
             <Route path="/influencers" element={<InfluencerPage userType={userType} setUserType={setUserType} />} />
+            <Route path="/influencer/:id" element={<InfluencerDetail userType={userType} setUserType={setUserType} />} />
           </Routes>
           <Footer />
         </Suspense>

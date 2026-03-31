@@ -28,10 +28,19 @@ def parse():
     
     # Identify columns
     name_col = next((c for c in df.columns if 'full name' in c.lower()), None)
-    insta_col = next((c for c in df.columns if 'Instagram Followers' in c), None)
-    tiktok_col = next((c for c in df.columns if 'TikTok Followers' in c), None)
-    yt_col = next((c for c in df.columns if 'YouTube subscribers' in c), None)
-    fb_col = next((c for c in df.columns if 'Facebook Page?' in c), None)
+    
+    # Followers
+    insta_fol_col = next((c for c in df.columns if 'Instagram Followers' in c or 'followers do you have on Instagram' in c.lower()), None)
+    tiktok_fol_col = next((c for c in df.columns if 'TikTok Followers' in c or 'followers do you have on TikTok' in c.lower()), None)
+    yt_fol_col = next((c for c in df.columns if 'YouTube subscribers' in c or 'YouTube subscribers' in c.lower()), None)
+    fb_fol_col = next((c for c in df.columns if 'Facebook Page?' in c or 'followers do you have on your Facebook Page' in c.lower()), None)
+    
+    # Social Links
+    insta_url_col = next((c for c in df.columns if 'Instagram channel URL' in c or ('Instagram handle' in c.lower() and 'profile' in c.lower())), None)
+    tiktok_url_col = next((c for c in df.columns if 'Tiktok channel URL' in c or ('TikTok handle' in c.lower() and 'profile' in c.lower())), None)
+    yt_url_col = next((c for c in df.columns if 'YouTube channel URL' in c.lower()), None)
+    fb_url_col = next((c for c in df.columns if 'Facebook Page name' in c.lower() or 'Facebook Page?' in c.lower()), None)
+    
     location_col = next((c for c in df.columns if 'reside in' in c.lower()), None)
     platform_col = next((c for c in df.columns if 'primary social media platform' in c.lower()), None)
     age_col = next((c for c in df.columns if 'age group' in c.lower()), None)
@@ -51,14 +60,17 @@ def parse():
         seen_names.add(name)
 
         # Reach calculation
-        insta = clean_num(row.get(insta_col, 0))
-        tiktok = clean_num(row.get(tiktok_col, 0))
-        yt = clean_num(row.get(yt_col, 0))
-        fb = clean_num(row.get(fb_col, 0))
-        f_count = insta + tiktok + yt + fb
+        insta_fol = clean_num(row.get(insta_fol_col, 0))
+        tiktok_fol = clean_num(row.get(tiktok_fol_col, 0))
+        yt_fol = clean_num(row.get(yt_fol_col, 0))
+        fb_fol = clean_num(row.get(fb_fol_col, 0))
+        f_count = insta_fol + tiktok_fol + yt_fol + fb_fol
         
         platform = str(row.get(platform_col, 'Instagram'))
-        if platform == 'nan' or platform == 'None': platform = 'Creator'
+        if platform == 'nan' or platform == 'None': 
+            if tiktok_fol > insta_fol and tiktok_fol > yt_fol: platform = 'TikTok'
+            elif yt_fol > insta_fol: platform = 'YouTube'
+            else: platform = 'Instagram'
 
         location = str(row.get(location_col, 'Nepal'))
         if location == 'nan': location = 'Nepal'
@@ -69,6 +81,40 @@ def parse():
         comp = str(row.get(comp_col, 'Contact for details'))
         if comp == 'nan': comp = 'Contact for details'
 
+        # Social links
+        insta_url = str(row.get(insta_url_col, ''))
+        tiktok_url = str(row.get(tiktok_url_col, ''))
+        yt_url = str(row.get(yt_url_col, ''))
+        fb_url = str(row.get(fb_url_col, ''))
+
+        # Improved Platform Detection
+        available_platforms = []
+        if insta_url != 'nan' and len(insta_url) > 2: available_platforms.append('Instagram')
+        if tiktok_url != 'nan' and len(tiktok_url) > 2: available_platforms.append('TikTok')
+        if yt_url != 'nan' and len(yt_url) > 2: available_platforms.append('YouTube')
+        if fb_url != 'nan' and len(fb_url) > 2: available_platforms.append('Facebook')
+        
+        # Primary platform logic
+        platform = str(row.get(platform_col, 'Instagram'))
+        if platform == 'nan' or platform == 'None' or platform == 'Creator': 
+            if len(available_platforms) > 0:
+                platform = available_platforms[0]
+            else:
+                platform = 'Instagram' # Default
+
+        location = str(row.get(location_col, 'Nepal'))
+        if location == 'nan': location = 'Nepal'
+
+        age = str(row.get(age_col, 'All Ages'))
+        if age == 'nan': age = 'All Ages'
+
+        comp_str = str(row.get(comp_col, 'Contact for details'))
+        if comp_str == 'nan': comp_str = 'Contact for details'
+        
+        # Extract individual compensation types for filtering
+        comp_tags = [c.strip() for c in comp_str.replace(' or ', ',').split(',') if len(c.strip()) > 2]
+        if not comp_tags: comp_tags = ['Contact for details']
+
         influencers.append({
             'id': 1000 + i,
             'name': name,
@@ -77,11 +123,19 @@ def parse():
             'followers': format_reach(f_count),
             'followers_raw': f_count,
             'platform': platform,
+            'platforms': available_platforms if available_platforms else [platform],
             'location': location,
             'age_group': age,
-            'compensation': comp,
+            'compensation': comp_str,
+            'comp_tags': comp_tags,
             'image': f"https://api.dicebear.com/7.x/avataaars/svg?seed={name.replace(' ', '')}",
-            'bio': f"Creative talent based in {location}. Open for meaningful collaborations."
+            'bio': f"Creative talent based in {location}. Open for meaningful collaborations.",
+            'socials': {
+                'instagram': insta_url if insta_url != 'nan' else '',
+                'tiktok': tiktok_url if tiktok_url != 'nan' else '',
+                'youtube': yt_url if yt_url != 'nan' else '',
+                'facebook': fb_url if fb_url != 'nan' else ''
+            }
         })
 
     # Sort by name

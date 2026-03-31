@@ -6,12 +6,34 @@
     "niche": "Digital Creator",
     "followers": "2.3K",
     "followers_raw": 2266,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram",
+      "TikTok"
+    ],
     "location": "Bhaktapur",
     "age_group": "23-35",
     "compensation": "Free Products, Cash, Exclusive Discounts or Coupons, Brand Ambassador Deals, Equity or Partnership Stake, Cross-Promotion (Brand promotes influencer\u2019s content/channel), Revenue Share, Performance-Based Payment",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Exclusive Discounts",
+      "Coupons",
+      "Brand Ambassador Deals",
+      "Equity",
+      "Partnership Stake",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+      "Revenue Share",
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=AasaHomesRealty",
-    "bio": "Creative talent based in Bhaktapur. Open for meaningful collaborations."
+    "bio": "Creative talent based in Bhaktapur. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/aasahomesrealty/",
+      "tiktok": "https://www.tiktok.com/@aasahomesrealty?lang=en",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1024,
@@ -20,12 +42,24 @@
     "niche": "Digital Creator",
     "followers": "0",
     "followers_raw": 0,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Kathmandu ",
     "age_group": "All Ages",
     "compensation": "Contact for details",
+    "comp_tags": [
+      "Contact for details"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=AashiqAli",
-    "bio": "Creative talent based in Kathmandu . Open for meaningful collaborations."
+    "bio": "Creative talent based in Kathmandu . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1013,
@@ -34,12 +68,29 @@
     "niche": "Digital Creator",
     "followers": "102.2K",
     "followers_raw": 102240,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Pokhara",
     "age_group": "15-45",
     "compensation": "Free Products, Cash, Brand Ambassador Deals, Equity or Partnership Stake, Revenue Share",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Brand Ambassador Deals",
+      "Equity",
+      "Partnership Stake",
+      "Revenue Share"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=AbiskarTripathi",
-    "bio": "Creative talent based in Pokhara. Open for meaningful collaborations."
+    "bio": "Creative talent based in Pokhara. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/wonderful__nepal/",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1035,
@@ -48,12 +99,27 @@
     "niche": "Digital Creator",
     "followers": "4.3K",
     "followers_raw": 4339,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Kabhrepalanchok",
     "age_group": "27",
     "compensation": "Cash, Equity or Partnership Stake, Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+    "comp_tags": [
+      "Cash",
+      "Equity",
+      "Partnership Stake",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=AjayGahatraj",
-    "bio": "Creative talent based in Kabhrepalanchok. Open for meaningful collaborations."
+    "bio": "Creative talent based in Kabhrepalanchok. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1014,
@@ -62,12 +128,25 @@
     "niche": "Digital Creator",
     "followers": "1.9K",
     "followers_raw": 1872,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Pokhara,Nepal",
     "age_group": "18-35",
     "compensation": "Cash, Performance-Based Payment",
+    "comp_tags": [
+      "Cash",
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=AjayaShrestha",
-    "bio": "Creative talent based in Pokhara,Nepal. Open for meaningful collaborations."
+    "bio": "Creative talent based in Pokhara,Nepal. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/ajay_retouch?igsh=MXIzeDZhMDUzeWxiNw%3D%3D&utm_source=qr",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1037,
@@ -76,12 +155,24 @@
     "niche": "Digital Creator",
     "followers": "159.0K",
     "followers_raw": 159000,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Kathmandu ",
     "age_group": "18-35",
     "compensation": "Cash",
+    "comp_tags": [
+      "Cash"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Amitkashyap",
-    "bio": "Creative talent based in Kathmandu . Open for meaningful collaborations."
+    "bio": "Creative talent based in Kathmandu . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/amit_kashyap_vlogs?igsh=MWt3ZGdqb3lwZjIyZg%3D%3D&utm_source=qr",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1060,
@@ -90,12 +181,24 @@
     "niche": "Digital Creator",
     "followers": "106.0K",
     "followers_raw": 106000,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Himachal Pradesh, India ",
     "age_group": "30-40",
     "compensation": "Cash",
+    "comp_tags": [
+      "Cash"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=AmitaNegi",
-    "bio": "Creative talent based in Himachal Pradesh, India . Open for meaningful collaborations."
+    "bio": "Creative talent based in Himachal Pradesh, India . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/negi_amita_chhorgia?igsh=Z2thOWVqcmZyc2Jt&utm_source=qr",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1033,
@@ -104,12 +207,26 @@
     "niche": "Digital Creator",
     "followers": "4.8K",
     "followers_raw": 4800,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Kathmandu",
     "age_group": "18-24 / 25-30",
     "compensation": "Free Products, Cash, Brand Ambassador Deals",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Brand Ambassador Deals"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=AnishaPaudel",
-    "bio": "Creative talent based in Kathmandu. Open for meaningful collaborations."
+    "bio": "Creative talent based in Kathmandu. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/__anisha.p__?igsh=MWh0ajNwdXA3dmN0cA==",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1053,
@@ -118,12 +235,26 @@
     "niche": "Digital Creator",
     "followers": "8.9K",
     "followers_raw": 8878,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "India - Bangalore",
     "age_group": "25-34",
     "compensation": "Free Products, Cash, Revenue Share",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Revenue Share"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=AnnapurnaTiwari",
-    "bio": "Creative talent based in India - Bangalore. Open for meaningful collaborations."
+    "bio": "Creative talent based in India - Bangalore. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1020,
@@ -132,12 +263,29 @@
     "niche": "Digital Creator",
     "followers": "1.7K",
     "followers_raw": 1700,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Kathmandu ( in Vancouver right now)",
     "age_group": "Female 18-30",
     "compensation": "Free Products, Cash, Exclusive Discounts or Coupons, Brand Ambassador Deals, Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Exclusive Discounts",
+      "Coupons",
+      "Brand Ambassador Deals",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=AreenaShrestha",
-    "bio": "Creative talent based in Kathmandu ( in Vancouver right now). Open for meaningful collaborations."
+    "bio": "Creative talent based in Kathmandu ( in Vancouver right now). Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "Areena_shrestha",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1005,
@@ -146,12 +294,25 @@
     "niche": "Digital Creator",
     "followers": "187.0K",
     "followers_raw": 187000,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Kathmandu",
     "age_group": "18-24",
     "compensation": "Free Products, Cash",
+    "comp_tags": [
+      "Free Products",
+      "Cash"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=BIBEKACHHAMI",
-    "bio": "Creative talent based in Kathmandu. Open for meaningful collaborations."
+    "bio": "Creative talent based in Kathmandu. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1049,
@@ -160,12 +321,25 @@
     "niche": "Digital Creator",
     "followers": "8.7K",
     "followers_raw": 8745,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram",
+      "TikTok"
+    ],
     "location": "Melbourne, Australia ",
     "age_group": "18-24",
     "compensation": "Free Products",
+    "comp_tags": [
+      "Free Products"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=ChristinaAnu",
-    "bio": "Creative talent based in Melbourne, Australia . Open for meaningful collaborations."
+    "bio": "Creative talent based in Melbourne, Australia . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "xtina_anu",
+      "tiktok": "xtina_anu",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1022,
@@ -174,12 +348,26 @@
     "niche": "Digital Creator",
     "followers": "77.0K",
     "followers_raw": 77000,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Kathmandu/Pokhara, Nepal & California, USA",
     "age_group": "25-34",
     "compensation": "Free Products, Cash, Brand Ambassador Deals",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Brand Ambassador Deals"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=ChristinaChhetri",
-    "bio": "Creative talent based in Kathmandu/Pokhara, Nepal & California, USA. Open for meaningful collaborations."
+    "bio": "Creative talent based in Kathmandu/Pokhara, Nepal & California, USA. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/christina_chhetri?igsh=aTBvc3ZmMWRiOGJq",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1044,
@@ -188,12 +376,26 @@
     "niche": "Digital Creator",
     "followers": "2.0K",
     "followers_raw": 1998,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram",
+      "TikTok"
+    ],
     "location": "BHAKTAPUR,NEPAL",
     "age_group": "18-39",
     "compensation": "Free Products, Brand Ambassador Deals",
+    "comp_tags": [
+      "Free Products",
+      "Brand Ambassador Deals"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=DOLMATAMANG",
-    "bio": "Creative talent based in BHAKTAPUR,NEPAL. Open for meaningful collaborations."
+    "bio": "Creative talent based in BHAKTAPUR,NEPAL. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "AYUMI NEPAL",
+      "tiktok": "AYUMI NEPAL",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1002,
@@ -202,12 +404,26 @@
     "niche": "Digital Creator",
     "followers": "0",
     "followers_raw": 0,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Nepal",
     "age_group": "All Ages",
     "compensation": "Free Products, Cash, Brand Ambassador Deals",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Brand Ambassador Deals"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Deepak",
-    "bio": "Creative talent based in Nepal. Open for meaningful collaborations."
+    "bio": "Creative talent based in Nepal. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1050,
@@ -216,12 +432,24 @@
     "niche": "Digital Creator",
     "followers": "155.8K",
     "followers_raw": 155800,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Siliguri Darjeeling ",
     "age_group": "30",
     "compensation": "Performance-Based Payment",
+    "comp_tags": [
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=DipeshSharma",
-    "bio": "Creative talent based in Siliguri Darjeeling . Open for meaningful collaborations."
+    "bio": "Creative talent based in Siliguri Darjeeling . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/dipeshsharmavlog?igsh=MWNnN3k3MmEyNzNpeQ%3D%3D&utm_source=qr",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1061,
@@ -230,12 +458,30 @@
     "niche": "Digital Creator",
     "followers": "2.9K",
     "followers_raw": 2896,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram",
+      "TikTok"
+    ],
     "location": "Birgunj Nepal",
     "age_group": "19-30",
     "compensation": "Free Products, Cash, Brand Ambassador Deals, Equity or Partnership Stake, Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Brand Ambassador Deals",
+      "Equity",
+      "Partnership Stake",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=GoldenShah",
-    "bio": "Creative talent based in Birgunj Nepal. Open for meaningful collaborations."
+    "bio": "Creative talent based in Birgunj Nepal. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/golden__shah/?hl=en",
+      "tiktok": "nil",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1051,
@@ -244,12 +490,28 @@
     "niche": "Digital Creator",
     "followers": "601.0K",
     "followers_raw": 601002,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Delhi, India",
     "age_group": "25-45",
     "compensation": "Cash, Brand Ambassador Deals, Cross-Promotion (Brand promotes influencer\u2019s content/channel), Revenue Share, Performance-Based Payment",
+    "comp_tags": [
+      "Cash",
+      "Brand Ambassador Deals",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+      "Revenue Share",
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Hemantdevi",
-    "bio": "Creative talent based in Delhi, India. Open for meaningful collaborations."
+    "bio": "Creative talent based in Delhi, India. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "Na",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1030,
@@ -258,12 +520,28 @@
     "niche": "Digital Creator",
     "followers": "31.6K",
     "followers_raw": 31606,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Bhaktapur, Nepal",
     "age_group": "18-34",
     "compensation": "Free Products, Cash, Cross-Promotion (Brand promotes influencer\u2019s content/channel), Revenue Share, Performance-Based Payment",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+      "Revenue Share",
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=IshakMiya",
-    "bio": "Creative talent based in Bhaktapur, Nepal. Open for meaningful collaborations."
+    "bio": "Creative talent based in Bhaktapur, Nepal. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1046,
@@ -272,12 +550,31 @@
     "niche": "Digital Creator",
     "followers": "20.6K",
     "followers_raw": 20647,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Dhaka, Bangladesh",
     "age_group": "20-40",
     "compensation": "Cash, Exclusive Discounts or Coupons, Brand Ambassador Deals, Equity or Partnership Stake, Cross-Promotion (Brand promotes influencer\u2019s content/channel), Revenue Share",
+    "comp_tags": [
+      "Cash",
+      "Exclusive Discounts",
+      "Coupons",
+      "Brand Ambassador Deals",
+      "Equity",
+      "Partnership Stake",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+      "Revenue Share"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=JerryAnthonyRozario",
-    "bio": "Creative talent based in Dhaka, Bangladesh. Open for meaningful collaborations."
+    "bio": "Creative talent based in Dhaka, Bangladesh. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/jerry.the.travelling.mouse/",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1057,
@@ -286,12 +583,24 @@
     "niche": "Digital Creator",
     "followers": "12.8K",
     "followers_raw": 12845,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Assam, India ",
     "age_group": "18-30",
     "compensation": "Cash",
+    "comp_tags": [
+      "Cash"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=KrishnaBiswakarma",
-    "bio": "Creative talent based in Assam, India . Open for meaningful collaborations."
+    "bio": "Creative talent based in Assam, India . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/krishna10.28?igsh=MXF6b21xdGp1MWg3",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1003,
@@ -300,12 +609,33 @@
     "niche": "Digital Creator",
     "followers": "1",
     "followers_raw": 1,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Kathmandu ",
     "age_group": "18-30",
     "compensation": "Free Products, Cash, Exclusive Discounts or Coupons, Brand Ambassador Deals, Equity or Partnership Stake, Cross-Promotion (Brand promotes influencer\u2019s content/channel), Revenue Share, Performance-Based Payment",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Exclusive Discounts",
+      "Coupons",
+      "Brand Ambassador Deals",
+      "Equity",
+      "Partnership Stake",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+      "Revenue Share",
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Kushalthapa",
-    "bio": "Creative talent based in Kathmandu . Open for meaningful collaborations."
+    "bio": "Creative talent based in Kathmandu . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1023,
@@ -314,12 +644,28 @@
     "niche": "Digital Creator",
     "followers": "1.2M",
     "followers_raw": 1192400,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Butwal, Nepal",
     "age_group": "15-54",
     "compensation": "Free Products, Brand Ambassador Deals, Equity or Partnership Stake, Performance-Based Payment",
+    "comp_tags": [
+      "Free Products",
+      "Brand Ambassador Deals",
+      "Equity",
+      "Partnership Stake",
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=KushumShrees",
-    "bio": "Creative talent based in Butwal, Nepal. Open for meaningful collaborations."
+    "bio": "Creative talent based in Butwal, Nepal. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/khadka_aarora?igsh=c3gwN2R4dW5hczNh&utm_source=qr",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1007,
@@ -328,12 +674,27 @@
     "niche": "Digital Creator",
     "followers": "7.0K",
     "followers_raw": 7000,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Butwal ",
     "age_group": "25-40",
     "compensation": "Cash, Brand Ambassador Deals, Revenue Share, Performance-Based Payment",
+    "comp_tags": [
+      "Cash",
+      "Brand Ambassador Deals",
+      "Revenue Share",
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=LalBahadurBishwakarma",
-    "bio": "Creative talent based in Butwal . Open for meaningful collaborations."
+    "bio": "Creative talent based in Butwal . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1008,
@@ -342,12 +703,24 @@
     "niche": "Digital Creator",
     "followers": "1.5K",
     "followers_raw": 1500,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Kathmandu ",
     "age_group": "15-35",
     "compensation": "Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+    "comp_tags": [
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=LaxmanDeuba",
-    "bio": "Creative talent based in Kathmandu . Open for meaningful collaborations."
+    "bio": "Creative talent based in Kathmandu . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1011,
@@ -356,12 +729,24 @@
     "niche": "Digital Creator",
     "followers": "1.5M",
     "followers_raw": 1485000,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Mumbai, andheri",
     "age_group": "18-24",
     "compensation": "Cash",
+    "comp_tags": [
+      "Cash"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Luisrai",
-    "bio": "Creative talent based in Mumbai, andheri. Open for meaningful collaborations."
+    "bio": "Creative talent based in Mumbai, andheri. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/luisrai_1111?igsh=MWVmbWo4cWUwNHZ4bw%3D%3D&utm_source=qr",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1009,
@@ -370,12 +755,26 @@
     "niche": "Digital Creator",
     "followers": "8.5K",
     "followers_raw": 8500,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Warsaw, Poland",
     "age_group": "24-35",
     "compensation": "Free Products, Cash, Brand Ambassador Deals",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Brand Ambassador Deals"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=MaciejPodg\u00f3rski",
-    "bio": "Creative talent based in Warsaw, Poland. Open for meaningful collaborations."
+    "bio": "Creative talent based in Warsaw, Poland. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1012,
@@ -384,12 +783,24 @@
     "niche": "Digital Creator",
     "followers": "166.0K",
     "followers_raw": 166000,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Kathmandu Nepal",
     "age_group": "18-24",
     "compensation": "Cash",
+    "comp_tags": [
+      "Cash"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=ManjilDhakal",
-    "bio": "Creative talent based in Kathmandu Nepal. Open for meaningful collaborations."
+    "bio": "Creative talent based in Kathmandu Nepal. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/manjil_dhakal_46?igsh=NXkxb2RweTViNDl5&utm_source=qr",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1039,
@@ -398,12 +809,28 @@
     "niche": "Digital Creator",
     "followers": "9.0K",
     "followers_raw": 9027,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram",
+      "TikTok"
+    ],
     "location": "Windsor, Canada ",
     "age_group": "18-24",
     "compensation": "Free Products, Cash, Brand Ambassador Deals, Performance-Based Payment",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Brand Ambassador Deals",
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=MausamiDhungana",
-    "bio": "Creative talent based in Windsor, Canada . Open for meaningful collaborations."
+    "bio": "Creative talent based in Windsor, Canada . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/mausidgna?igsh=OXd2YXEwODEwb2Q4&utm_source=qr",
+      "tiktok": "https://www.tiktok.com/@mausi.d?_t=ZM-8wNVPKoyfn4&_r=1",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1041,
@@ -412,12 +839,24 @@
     "niche": "Digital Creator",
     "followers": "1.2M",
     "followers_raw": 1155001,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Mumbai, India",
     "age_group": "18-60",
     "compensation": "Cash",
+    "comp_tags": [
+      "Cash"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=MohammedAnasKhan",
-    "bio": "Creative talent based in Mumbai, India. Open for meaningful collaborations."
+    "bio": "Creative talent based in Mumbai, India. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/anaskhaaan",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1043,
@@ -426,12 +865,32 @@
     "niche": "Digital Creator",
     "followers": "15.4K",
     "followers_raw": 15431,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram",
+      "TikTok"
+    ],
     "location": "Kathmandu",
     "age_group": "25\u201334",
     "compensation": "Free Products, Cash, Exclusive Discounts or Coupons, Brand Ambassador Deals, Cross-Promotion (Brand promotes influencer\u2019s content/channel), Revenue Share, Performance-Based Payment",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Exclusive Discounts",
+      "Coupons",
+      "Brand Ambassador Deals",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+      "Revenue Share",
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=PrashannaMali",
-    "bio": "Creative talent based in Kathmandu. Open for meaningful collaborations."
+    "bio": "Creative talent based in Kathmandu. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/prashannamali/",
+      "tiktok": "https://www.tiktok.com/@prashannareviews",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1027,
@@ -440,12 +899,29 @@
     "niche": "Digital Creator",
     "followers": "106.5K",
     "followers_raw": 106500,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Kathmandu, Nepal ",
     "age_group": "18-24",
     "compensation": "Free Products, Cash, Brand Ambassador Deals, Equity or Partnership Stake, Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Brand Ambassador Deals",
+      "Equity",
+      "Partnership Stake",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=PrincePandey",
-    "bio": "Creative talent based in Kathmandu, Nepal . Open for meaningful collaborations."
+    "bio": "Creative talent based in Kathmandu, Nepal . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "I don't have Instagram | But I Have Fb Page:- https://www.facebook.com/PrincePandeyExplorer?mibextid=ZbWKwL",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1058,
@@ -454,12 +930,28 @@
     "niche": "Digital Creator",
     "followers": "4.1K",
     "followers_raw": 4100,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Dhangadhi, nepal",
     "age_group": "18-65",
     "compensation": "Free Products, Cash, Exclusive Discounts or Coupons, Brand Ambassador Deals",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Exclusive Discounts",
+      "Coupons",
+      "Brand Ambassador Deals"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Princesharmadahal",
-    "bio": "Creative talent based in Dhangadhi, nepal. Open for meaningful collaborations."
+    "bio": "Creative talent based in Dhangadhi, nepal. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1026,
@@ -468,12 +960,24 @@
     "niche": "Digital Creator",
     "followers": "1.2M",
     "followers_raw": 1190000,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Ranchi (Jharkhand) ",
     "age_group": "14-28",
     "compensation": "Cash",
+    "comp_tags": [
+      "Cash"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Priyaashi",
-    "bio": "Creative talent based in Ranchi (Jharkhand) . Open for meaningful collaborations."
+    "bio": "Creative talent based in Ranchi (Jharkhand) . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/priyaashiofficial?igsh=MmVqN3l1bWc2YWEy",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1004,
@@ -482,12 +986,30 @@
     "niche": "Digital Creator",
     "followers": "1.7K",
     "followers_raw": 1700,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Rupandehi,Nepal",
     "age_group": "18-30",
     "compensation": "Free Products, Cash, Brand Ambassador Deals, Equity or Partnership Stake, Cross-Promotion (Brand promotes influencer\u2019s content/channel), Performance-Based Payment",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Brand Ambassador Deals",
+      "Equity",
+      "Partnership Stake",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=PuskarKarki",
-    "bio": "Creative talent based in Rupandehi,Nepal. Open for meaningful collaborations."
+    "bio": "Creative talent based in Rupandehi,Nepal. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1036,
@@ -496,12 +1018,27 @@
     "niche": "Digital Creator",
     "followers": "32.3K",
     "followers_raw": 32304,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram",
+      "TikTok"
+    ],
     "location": "Lalitpur",
     "age_group": "18-24",
     "compensation": "Cash, Brand Ambassador Deals, Performance-Based Payment",
+    "comp_tags": [
+      "Cash",
+      "Brand Ambassador Deals",
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=RahelHimdung",
-    "bio": "Creative talent based in Lalitpur. Open for meaningful collaborations."
+    "bio": "Creative talent based in Lalitpur. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "rahelthebarbiee",
+      "tiktok": "rahelthebarbiee",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1025,
@@ -510,12 +1047,27 @@
     "niche": "Digital Creator",
     "followers": "1.8M",
     "followers_raw": 1849000,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "New Delhi",
     "age_group": "18-24",
     "compensation": "Cash, Brand Ambassador Deals, Revenue Share, Performance-Based Payment",
+    "comp_tags": [
+      "Cash",
+      "Brand Ambassador Deals",
+      "Revenue Share",
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ramjeetkumar",
-    "bio": "Creative talent based in New Delhi. Open for meaningful collaborations."
+    "bio": "Creative talent based in New Delhi. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/travelerram?igsh=cjNmNWRiMHEzazV3",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1054,
@@ -524,12 +1076,29 @@
     "niche": "Digital Creator",
     "followers": "2.7K",
     "followers_raw": 2660,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram",
+      "TikTok"
+    ],
     "location": "Kathmandu",
     "age_group": "16-30",
     "compensation": "Free Products, Cash, Exclusive Discounts or Coupons, Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Exclusive Discounts",
+      "Coupons",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Richene",
-    "bio": "Creative talent based in Kathmandu. Open for meaningful collaborations."
+    "bio": "Creative talent based in Kathmandu. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/kalaamiiii/",
+      "tiktok": "https://www.tiktok.com/@kalaamiiii",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1029,
@@ -538,12 +1107,28 @@
     "niche": "Digital Creator",
     "followers": "6.0K",
     "followers_raw": 5995,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Lalitpur ",
     "age_group": "25 -34",
     "compensation": "Free Products, Cash, Exclusive Discounts or Coupons, Brand Ambassador Deals",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Exclusive Discounts",
+      "Coupons",
+      "Brand Ambassador Deals"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=RojeenaShakya",
-    "bio": "Creative talent based in Lalitpur . Open for meaningful collaborations."
+    "bio": "Creative talent based in Lalitpur . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/rojeenashakya?igsh=MTNqenpzNjB4NDkwdw==",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1016,
@@ -552,12 +1137,26 @@
     "niche": "Digital Creator",
     "followers": "1.1K",
     "followers_raw": 1109,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Paris",
     "age_group": "25-34",
     "compensation": "Free Products, Cash, Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=RonanRiou",
-    "bio": "Creative talent based in Paris. Open for meaningful collaborations."
+    "bio": "Creative talent based in Paris. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/riyaronan_/",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1017,
@@ -566,12 +1165,27 @@
     "niche": "Digital Creator",
     "followers": "26.5K",
     "followers_raw": 26531,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Pokhara, Nepal",
     "age_group": "18-40",
     "compensation": "Cash, Brand Ambassador Deals, Equity or Partnership Stake",
+    "comp_tags": [
+      "Cash",
+      "Brand Ambassador Deals",
+      "Equity",
+      "Partnership Stake"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=RupsenBhartiThakali",
-    "bio": "Creative talent based in Pokhara, Nepal. Open for meaningful collaborations."
+    "bio": "Creative talent based in Pokhara, Nepal. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/rupsan__?igsh=azdmeno4M3B6dzly&utm_source=qr",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1048,
@@ -580,12 +1194,27 @@
     "niche": "Digital Creator",
     "followers": "198.0K",
     "followers_raw": 198000,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram",
+      "TikTok"
+    ],
     "location": "Kathmandu",
     "age_group": "18-30",
     "compensation": "Cash, Brand Ambassador Deals, Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+    "comp_tags": [
+      "Cash",
+      "Brand Ambassador Deals",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=SafaJahanMun",
-    "bio": "Creative talent based in Kathmandu. Open for meaningful collaborations."
+    "bio": "Creative talent based in Kathmandu. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/safa_jahan_mun?igsh=MTJoc3l4MTFzdnkzNw%3D%3D&utm_source=qr",
+      "tiktok": "https://www.tiktok.com/@safa.jahan.mun2?_t=ZS-8wSzVxBn8Wg&_r=1",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1042,
@@ -594,12 +1223,34 @@
     "niche": "Digital Creator",
     "followers": "17.1K",
     "followers_raw": 17103,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram",
+      "TikTok"
+    ],
     "location": "Mugu",
     "age_group": "20-30",
     "compensation": "Free Products, Cash, Exclusive Discounts or Coupons, Brand Ambassador Deals, Equity or Partnership Stake, Cross-Promotion (Brand promotes influencer\u2019s content/channel), Revenue Share, Performance-Based Payment",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Exclusive Discounts",
+      "Coupons",
+      "Brand Ambassador Deals",
+      "Equity",
+      "Partnership Stake",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+      "Revenue Share",
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=SaileshHamal",
-    "bio": "Creative talent based in Mugu. Open for meaningful collaborations."
+    "bio": "Creative talent based in Mugu. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/sailesh.hamal99/profilecard/?igsh=azhib2N5M2JyMHIy",
+      "tiktok": "https://www.tiktok.com/@sailesh..hamal99?_t=ZS-8wOOsr908pN&_r=1",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1052,
@@ -608,12 +1259,25 @@
     "niche": "Digital Creator",
     "followers": "19.0K",
     "followers_raw": 19000,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram",
+      "TikTok"
+    ],
     "location": "Kathmandu Nepal ",
     "age_group": "18-24",
     "compensation": "Cash",
+    "comp_tags": [
+      "Cash"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=SajanNepal",
-    "bio": "Creative talent based in Kathmandu Nepal . Open for meaningful collaborations."
+    "bio": "Creative talent based in Kathmandu Nepal . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/sajan_nepal15?igsh=NjY3cGNmMmZpeHJl",
+      "tiktok": "https://www.tiktok.com/@sajannepal22?_t=ZS-8wUKp2LIdDG&_r=1",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1059,
@@ -622,12 +1286,25 @@
     "niche": "Digital Creator",
     "followers": "18.2K",
     "followers_raw": 18200,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Pokhara ",
     "age_group": "16-34",
     "compensation": "Free Products, Performance-Based Payment",
+    "comp_tags": [
+      "Free Products",
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=SantoshLamichhane",
-    "bio": "Creative talent based in Pokhara . Open for meaningful collaborations."
+    "bio": "Creative talent based in Pokhara . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1028,
@@ -636,12 +1313,29 @@
     "niche": "Digital Creator",
     "followers": "4.2K",
     "followers_raw": 4155,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "United Kingdom ",
     "age_group": "20-40",
     "compensation": "Free Products, Cash, Exclusive Discounts or Coupons, Brand Ambassador Deals, Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Exclusive Discounts",
+      "Coupons",
+      "Brand Ambassador Deals",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=SharmilaGurung",
-    "bio": "Creative talent based in United Kingdom . Open for meaningful collaborations."
+    "bio": "Creative talent based in United Kingdom . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/_sharmilagrg_?igsh=YnRtYmRtbmQ0MHhu&utm_source=qr",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1018,
@@ -650,12 +1344,27 @@
     "niche": "Digital Creator",
     "followers": "142.7K",
     "followers_raw": 142651,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Pokhara, Nepal",
     "age_group": "18-35",
     "compensation": "Cash, Brand Ambassador Deals, Equity or Partnership Stake",
+    "comp_tags": [
+      "Cash",
+      "Brand Ambassador Deals",
+      "Equity",
+      "Partnership Stake"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=SharmilaKarki",
-    "bio": "Creative talent based in Pokhara, Nepal. Open for meaningful collaborations."
+    "bio": "Creative talent based in Pokhara, Nepal. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/thisissharmy?igsh=YnFtNXpxZXFsMXQ=",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1010,
@@ -664,12 +1373,26 @@
     "niche": "Digital Creator",
     "followers": "6.8K",
     "followers_raw": 6796,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Nepal",
     "age_group": "18-25",
     "compensation": "Free Products, Cash, Brand Ambassador Deals",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Brand Ambassador Deals"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=SimranLamsal",
-    "bio": "Creative talent based in Nepal. Open for meaningful collaborations."
+    "bio": "Creative talent based in Nepal. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1021,
@@ -678,12 +1401,30 @@
     "niche": "Digital Creator",
     "followers": "8.2K",
     "followers_raw": 8164,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Pickerington ",
     "age_group": "23",
     "compensation": "Exclusive Discounts or Coupons, Brand Ambassador Deals, Equity or Partnership Stake, Cross-Promotion (Brand promotes influencer\u2019s content/channel), Performance-Based Payment",
+    "comp_tags": [
+      "Exclusive Discounts",
+      "Coupons",
+      "Brand Ambassador Deals",
+      "Equity",
+      "Partnership Stake",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=SitaBhattarai",
-    "bio": "Creative talent based in Pickerington . Open for meaningful collaborations."
+    "bio": "Creative talent based in Pickerington . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/princess_situ/",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1006,
@@ -692,12 +1433,24 @@
     "niche": "Digital Creator",
     "followers": "7.0K",
     "followers_raw": 7000,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Kathmandu ",
     "age_group": "24-45",
     "compensation": "Contact for details",
+    "comp_tags": [
+      "Contact for details"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=SujanAmatya",
-    "bio": "Creative talent based in Kathmandu . Open for meaningful collaborations."
+    "bio": "Creative talent based in Kathmandu . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1032,
@@ -706,12 +1459,32 @@
     "niche": "Digital Creator",
     "followers": "62.7K",
     "followers_raw": 62700,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Paris, France ",
     "age_group": "24-30",
     "compensation": "Free Products, Cash, Exclusive Discounts or Coupons, Brand Ambassador Deals, Equity or Partnership Stake, Cross-Promotion (Brand promotes influencer\u2019s content/channel), Revenue Share",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Exclusive Discounts",
+      "Coupons",
+      "Brand Ambassador Deals",
+      "Equity",
+      "Partnership Stake",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+      "Revenue Share"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=SujanCHAULAGAIN",
-    "bio": "Creative talent based in Paris, France . Open for meaningful collaborations."
+    "bio": "Creative talent based in Paris, France . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1055,
@@ -720,12 +1493,25 @@
     "niche": "Digital Creator",
     "followers": "228",
     "followers_raw": 228,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Dehradun ",
     "age_group": "All Ages",
     "compensation": "Free Products, Cash, ",
+    "comp_tags": [
+      "Free Products",
+      "Cash"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Tanikamaliyal",
-    "bio": "Creative talent based in Dehradun . Open for meaningful collaborations."
+    "bio": "Creative talent based in Dehradun . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": " https://www.instagram.com/tanika_maliyal/profilecard/?igsh=MXBib3RwMXN5NmIwdw==",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1045,
@@ -734,12 +1520,25 @@
     "niche": "Digital Creator",
     "followers": "25.7K",
     "followers_raw": 25746,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram",
+      "TikTok"
+    ],
     "location": "Dharan",
     "age_group": "18-42",
     "compensation": "Cash",
+    "comp_tags": [
+      "Cash"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=UjjwalKafle",
-    "bio": "Creative talent based in Dharan. Open for meaningful collaborations."
+    "bio": "Creative talent based in Dharan. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/nepali_motivation1219/",
+      "tiktok": "https://www.tiktok.com/@nepalimotivation1219?lang=en",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1015,
@@ -748,12 +1547,28 @@
     "niche": "Digital Creator",
     "followers": "3.6K",
     "followers_raw": 3600,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Sydney, Australia",
     "age_group": "18-30",
     "compensation": "Free Products, Exclusive Discounts or Coupons, Brand Ambassador Deals, Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+    "comp_tags": [
+      "Free Products",
+      "Exclusive Discounts",
+      "Coupons",
+      "Brand Ambassador Deals",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=UnishaBimali",
-    "bio": "Creative talent based in Sydney, Australia. Open for meaningful collaborations."
+    "bio": "Creative talent based in Sydney, Australia. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/ilamib_unisha?igsh=MWhsNmtieTY2ZmZ5cA%3D%3D&utm_source=qr",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1040,
@@ -762,12 +1577,25 @@
     "niche": "Digital Creator",
     "followers": "1.3K",
     "followers_raw": 1346,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram",
+      "TikTok"
+    ],
     "location": "Nepal",
     "age_group": "18-24",
     "compensation": "Free Products",
+    "comp_tags": [
+      "Free Products"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Unnatimusyaju",
-    "bio": "Creative talent based in Nepal. Open for meaningful collaborations."
+    "bio": "Creative talent based in Nepal. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/unni_musyaju/profilecard/?igsh=ZTV6NDI0czZ2OTM4",
+      "tiktok": "https://www.tiktok.com/@unni_musyaju?_t=ZS-8wNgKgMuGA6&_r=1",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1019,
@@ -776,12 +1604,24 @@
     "niche": "Digital Creator",
     "followers": "106.0K",
     "followers_raw": 106000,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Oregon",
     "age_group": "25-34",
     "compensation": "Cash",
+    "comp_tags": [
+      "Cash"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=ValeriePope",
-    "bio": "Creative talent based in Oregon. Open for meaningful collaborations."
+    "bio": "Creative talent based in Oregon. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/voyageswithval",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1034,
@@ -790,12 +1630,25 @@
     "niche": "Digital Creator",
     "followers": "2.3K",
     "followers_raw": 2347,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Peshawar pakistan ",
     "age_group": "18-25",
     "compensation": "Free Products, Cash",
+    "comp_tags": [
+      "Free Products",
+      "Cash"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=WaqarAhmad",
-    "bio": "Creative talent based in Peshawar pakistan . Open for meaningful collaborations."
+    "bio": "Creative talent based in Peshawar pakistan . Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "https://www.instagram.com/waqarahmad.01/profilecard/?igsh=MThldW5wcXltNWV0NQ==",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   },
   {
     "id": 1047,
@@ -804,11 +1657,32 @@
     "niche": "Digital Creator",
     "followers": "0",
     "followers_raw": 0,
-    "platform": "Creator",
+    "platform": "Instagram",
+    "platforms": [
+      "Instagram"
+    ],
     "location": "Manali, India",
     "age_group": "All Ages",
     "compensation": "Free Products, Cash, Exclusive Discounts or Coupons, Brand Ambassador Deals, Equity or Partnership Stake, Cross-Promotion (Brand promotes influencer\u2019s content/channel), Revenue Share, Performance-Based Payment, ",
+    "comp_tags": [
+      "Free Products",
+      "Cash",
+      "Exclusive Discounts",
+      "Coupons",
+      "Brand Ambassador Deals",
+      "Equity",
+      "Partnership Stake",
+      "Cross-Promotion (Brand promotes influencer\u2019s content/channel)",
+      "Revenue Share",
+      "Performance-Based Payment"
+    ],
     "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=gaganpaul",
-    "bio": "Creative talent based in Manali, India. Open for meaningful collaborations."
+    "bio": "Creative talent based in Manali, India. Open for meaningful collaborations.",
+    "socials": {
+      "instagram": "",
+      "tiktok": "",
+      "youtube": "",
+      "facebook": ""
+    }
   }
 ]
